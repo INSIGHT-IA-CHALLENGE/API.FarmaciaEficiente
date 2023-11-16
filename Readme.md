@@ -1,5 +1,5 @@
 # Farmacia.Eficiente
-Uma ferramenta para gerar anuncios
+Uma ferramenta para gerenciar e otimizar as filas de espera nos postos de saude para a retirada de medicamentos
 
 ## Banco de Dados
 Para criar as tabelas e estruturas necessárias do banco de dados, rodar o script do arquivo *create.sql* localizado na raiz do projeto
