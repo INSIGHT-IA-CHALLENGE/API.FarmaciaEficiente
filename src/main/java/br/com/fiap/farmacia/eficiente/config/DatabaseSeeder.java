@@ -80,8 +80,8 @@ public class DatabaseSeeder implements CommandLineRunner{
         usuario1.setNome("Gustavo Balero");
         usuario1.setEmail("rm93090@fiap.com.br");
         usuario1.setSenha(encoder.encode("abc123"));
-        usuario1.setTipoUsuario(TipoUsuario.ADMIN);
-        usuario1.setTelefone("11995049078");
+        usuario1.setTipoUsuario(TipoUsuario.PACIENTE);
+        usuario1.setTelefone("(11) 99504-9078");
         usuario1.setEndereco(endereco1);
         usuarioRepository.save(usuario1);
 
@@ -90,7 +90,7 @@ public class DatabaseSeeder implements CommandLineRunner{
         usuario2.setEmail("sp@prefeitura.gov.br");
         usuario2.setSenha(encoder.encode("abc123"));
         usuario2.setTipoUsuario(TipoUsuario.ADMIN);
-        usuario2.setTelefone("1132431008");
+        usuario2.setTelefone("(11) 3243-1008");
         usuario2.setEndereco(endereco3);
         usuarioRepository.save(usuario2);
 

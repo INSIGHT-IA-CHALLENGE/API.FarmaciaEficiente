@@ -35,11 +35,11 @@ public class Posto {
     @OneToOne
     private Endereco endereco;
 
-    @Size(min = 1, max = 50, message = "O nome do posto de saude deve ter entre 1 e 50 caracteres")
+    @Size(min = 1, max = 150, message = "O nome do posto de saude deve ter entre 1 e 50 caracteres")
     @NotNull 
     private String nome;
 
-    @Size(min = 1, max = 50, message = "A descricao do posto de saude deve ter entre 1 e 50 caracteres")
+    @Size(min = 1, max = 150, message = "A descricao do posto de saude deve ter entre 1 e 50 caracteres")
     @NotNull 
     private String descricao;
 

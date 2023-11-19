@@ -83,7 +83,9 @@ public class EstoqueController {
 
     @GetMapping("{idPosto}")
     public ResponseEntity<List<Estoque>> listByPosto(@PathVariable Integer idPosto) {
-        return ResponseEntity.ok(repository.findByPostoIdAndStatus(idPosto, Status.ATIVO));
+        return ResponseEntity.ok(
+            repository.findByPostoIdAndStatusAndMedicamentoStatus(idPosto, Status.ATIVO, Status.ATIVO)
+        );
     }
 
     private Estoque getEstoque(Integer id){

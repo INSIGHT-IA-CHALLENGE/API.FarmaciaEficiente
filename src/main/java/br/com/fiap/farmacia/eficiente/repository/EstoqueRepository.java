@@ -8,5 +8,5 @@ import br.com.fiap.farmacia.eficiente.models.Status;
 
 public interface EstoqueRepository extends JpaRepository<Estoque, Integer>{
     
-    List<Estoque> findByPostoIdAndStatus(Integer idPosto, Status status);
+    List<Estoque> findByPostoIdAndStatusAndMedicamentoStatus(Integer idPosto, Status status, Status statusMedicamento);
 }

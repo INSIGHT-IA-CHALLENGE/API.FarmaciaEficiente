@@ -30,7 +30,6 @@ public class Estoque {
 
     @NotNull
     @ManyToOne
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Posto posto;
 
     @NotNull
