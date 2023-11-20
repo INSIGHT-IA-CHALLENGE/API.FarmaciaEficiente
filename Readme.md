@@ -1,6 +1,11 @@
 # Farmacia.Eficiente
 Uma ferramenta para gerenciar e otimizar as filas de espera nos postos de saude para a retirada de medicamentos
 
+## Grupo
+- Gustavo Balero RM93090
+- Marcelo Gimenes RM93897
+- Pedro Vidal RM93567
+
 ## Banco de Dados
 Para criar as tabelas e estruturas necessárias do banco de dados, rodar o script do arquivo *create.sql* localizado na raiz do projeto
 
