@@ -8,5 +8,5 @@ import br.com.fiap.farmacia.eficiente.models.Retirada;
 
 public interface RetiradaRepository extends JpaRepository<Retirada, Integer> {
     
-    List<Retirada> findByUsuarioId(Integer idUsuario);
+    List<Retirada> findByUsuarioIdOrderByIdDesc(Integer idUsuario);
 }

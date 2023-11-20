@@ -72,6 +72,6 @@ public class RetiradaController {
             throw new RestNotAuthorizedException("Usuario logado é diferente do usuario da retirada");
         }
 
-        return ResponseEntity.ok(repository.findByUsuarioId(idUsuario));
+        return ResponseEntity.ok(repository.findByUsuarioIdOrderByIdDesc(idUsuario));
     }
 }
